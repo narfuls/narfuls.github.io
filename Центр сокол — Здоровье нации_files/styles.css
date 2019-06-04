@@ -1,0 +1,283 @@
+/*
+ * <codeheader>
+ * <name>AMPAE Qt LightBox</name>
+ * <version>1.0</version>
+ * <description>Qt LightBox</description>
+ * <base>https://ampae.com/</base>
+ * <author>AMPAE</author>
+ * <email>info@ampae.com</email>
+ * <copyright file="LICENSE.txt" company="AMPAE">
+ * THIS CODE ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR
+ * A PARTICULAR PURPOSE.
+ * </copyright>
+ * <date>2018-09-17</date>
+ * <summary>
+ * Styles for Qt LightBox;
+ * </summary>
+ * </codeheader>
+*/
+#qt_popup_lb h1 {
+  margin: 0;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 0.3em;
+}
+#qt_popup_lb h2 {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 0.4em;
+}
+#qt_popup_lb h3 {
+  margin: 0;
+  font-size: 1.3em;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+#qt_popup_lb h4 {
+  margin: 0;
+  font-size: 1.25em;
+  line-height: 1em;
+  margin-bottom: 0.81em;
+}
+#qt_popup_lb h5 {
+  margin: 0;
+  font-size: .83em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+#qt_popup_lb h6 {
+  margin: 0;
+  font-size: .75em;
+  line-height: 1em;
+  margin-bottom: 1.2em;
+}
+#qt_popup_lb p {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+#qt_popup_lb ul {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+#qt_popup_lb blockquote {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+#qt_popup_lb pre {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+#qt_popup_lb td {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+#qt_popup_lb th {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+#qt_popup_lb label {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+#qt_popup_lb small {
+  margin: 0;
+  font-size: 0.875em;
+  line-height: 0.8em;
+}
+#qt_popup_lb p.small {
+  margin: 0;
+  font-size: 0.875em;
+  line-height: 0.8em;
+}
+@media (min-width: 760px) {
+  #qt_popup_lb h1 {
+    margin: 0;
+    font-size: 2.4em;
+    line-height: 1.4em;
+    margin-bottom: 0.4em;
+  }
+  #qt_popup_lb h2 {
+    margin: 0;
+    font-size: 1.8em;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+  }
+  #qt_popup_lb h3 {
+    margin: 0;
+    font-size: 1.75em;
+    line-height: 1.2em;
+    margin-bottom: 0.6em;
+  }
+  #qt_popup_lb h4 {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 0.8em;
+  }
+  #qt_popup_lb h5 {
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.1em;
+    margin-bottom: 1em;
+  }
+  #qt_popup_lb h6 {
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.2em;
+    margin-bottom: 1.1em;
+  }
+  #qt_popup_lb p {
+    margin: 0;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    margin-bottom: 1.1em;
+  }
+  #qt_popup_lb ul {
+    margin: 0;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    margin-bottom: 1.1em;
+  }
+  #qt_popup_lb blockquote {
+    margin: 0;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    margin-bottom: 1.1em;
+  }
+  #qt_popup_lb pre {
+    margin: 0;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    margin-bottom: 1.1em;
+  }
+  #qt_popup_lb td {
+    margin: 0;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    margin-bottom: 1.1em;
+  }
+  #qt_popup_lb th {
+    margin: 0;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    margin-bottom: 1.1em;
+  }
+  #qt_popup_lb label {
+    margin: 0;
+    font-size: 1.15em;
+    line-height: 1.3em;
+    margin-bottom: 1.1em;
+  }
+  #qt_popup_lb small {
+    margin: 0;
+    font-size: 0.875em;
+    line-height: 0.9em;
+    margin-bottom: 0.9em;
+  }
+  #qt_popup_lb p.small {
+    margin: 0;
+    font-size: 0.875em;
+    line-height: 0.9em;
+    margin-bottom: 0.9em;
+  }
+}
+#qt_popup_overlay {
+  background: #000000;
+  height: 100%;
+  margin-top: 0px;
+  opacity: 0.0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+}
+#qt_popup_lb {
+  background-color: transparent;
+  bottom: 0;
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font: 16px/26px Helvetica, Helvetica Neue, Arial;
+  height: 90%;
+  left: 0;
+  line-height: 1.4;
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 90%;
+  z-index: 9999999;
+}
+#qt_popup_lb .qt-popup-close-button {
+  -moz-animation: qt-popup-fadein 3s;
+  -ms-animation: qt-popup-fadein 3s;
+  -o-animation: qt-popup-fadein 3s;
+  -webkit-animation: qt-popup-fadein 3s;
+  animation: qt-popup-fadein 3s;
+  border: 2px solid #aaa;
+  color: #aaa;
+  cursor: pointer;
+  display: block;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.1em;
+  padding: 3px;
+  margin:0;
+  position: absolute;
+  right: 20px;
+  right: 5px;
+  text-align: center;
+  text-decoration: none;
+  top: 30px;
+  top: 40px;
+  width: 1.4em;
+  z-index: 99999999;
+}
+#qt_popup_lb .qt_popup_header {
+  color: #eeeeee;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 8px 12px;
+  text-align: center;
+}
+#qt_popup_lb .qt_popup_body {
+  background-color: transparent;
+  height: 90%;
+  margin: 0;
+  padding: 8px 12px;
+  text-align: center;
+}
+#qt_popup_lb .qt_popup_footer {
+  color: #eeeeee;
+  margin: 0;
+  padding: 8px 12px;
+  text-align: center;
+}
+.qt_popup_content {
+  height: calc(100vh - 110px);
+}
+.qt_popup_content_right {
+  background-color: #fff;
+  padding: 10px;
+  height: calc(100vh - 110px);
+}
+@media (min-width: 760px) {
+  #qt_popup_lb {
+    top: 10px;
+  }
+}
