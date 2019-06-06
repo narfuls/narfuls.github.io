@@ -6,16 +6,19 @@ jQuery(document).ready(function($) {
     //hide/show on scrolling
     var prevScrollpos = window.pageYOffset;
     var mainMenuHeight;
+    var canHover = !isTouchDevice();
     window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (mainMenuHeight < $(window).outerHeight()) {
-            if (prevScrollpos > currentScrollPos) {
-                $("#masthead").slideDown(300);
-            } else {
-                $("#masthead").slideUp(300);
+        if (canHover) {
+            var currentScrollPos = window.pageYOffset;
+            if (mainMenuHeight < $(window).outerHeight()) {
+                if (prevScrollpos > currentScrollPos) {
+                    $("#masthead").slideDown(300);
+                } else {
+                    $("#masthead").slideUp(300);
+                }
             }
+            prevScrollpos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
     }
 
     alignMenu();
@@ -74,6 +77,15 @@ jQuery(document).ready(function($) {
             $("#masthead").css("position", "absolute");
         } else {
             $("#masthead").css("position", "fixed");
+        }
+    }
+
+    function isTouchDevice() {
+        try {
+            document.createEvent('TouchEvent');
+            return true;
+        } catch (e) {
+            return false;
         }
     }
 });

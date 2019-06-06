@@ -110,10 +110,12 @@ html {
     width: 100%;
 }
 
-.menu-item:hover {
+.menu-item:hover,
+.menu-item:focus {
     background-color: rgba(59, 89, 173);
 }
 
+.sub-menu>li>a:focus,
 .sub-menu>li>a:hover {
     color: rgb(233, 235, 240);
 }
@@ -121,7 +123,8 @@ html {
 .sub-menu a,
 .current_page_item>a,
 .current-menu-item>a,
-.menu-item:hover>a {
+.menu-item:hover>a,
+.menu-item:focus>a {
     color: rgba(203, 209, 223);
 }
 
@@ -172,7 +175,7 @@ html {
 .main-navigation ul ul li:hover>ul,
 .main-navigation ul ul li.focus>ul,
 .hideshow>ul>li:hover>ul,
-.hideshow ul li.focus>ul {
+.hideshow>ul>li.focus>ul {
     left: auto;
     right: 100%;
 }
@@ -245,6 +248,20 @@ html {
     float: right;
     text-align: right;
     width: 50%;
+}
+
+@media only screen and (max-width: 480px),
+(hover: none) {
+    .hideshow>ul {
+        width: 100vw;
+        right: 0px;
+    }
+    .hideshow>ul>li>ul {
+        position: unset;
+    }
+    .hideshow ul {
+        padding-left: 1em;
+    }
 }
 
 
