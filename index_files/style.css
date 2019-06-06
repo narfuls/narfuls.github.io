@@ -259,7 +259,7 @@ html {
     .hideshow>ul {
         width: 100vw;
         right: 0px;
-        height: 80vh;
+        max-height: calc(100vh - 70px);
         overflow-y: scroll;
     }
     .hideshow>ul>li>ul {
@@ -269,9 +269,23 @@ html {
         position: fixed;
         right: 0px;
         top: 0px;
+        z-index: 0;
     }
     .hideshow ul {
         padding-left: 1em;
+    }
+}
+
+@media not screen and (max-width: 480px),
+(hover: none) {
+    .hideshow>ul {
+        right: 0px;
+    }
+    .hideshow>ul a {
+        width: 200px;
+    }
+    .hideshow>ul>li>ul {
+        position: absolute;
     }
 }
 

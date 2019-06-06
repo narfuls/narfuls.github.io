@@ -7,8 +7,10 @@ jQuery(document).ready(function($) {
     var prevScrollpos = window.pageYOffset;
     var mainMenuHeight;
     var canHover = !isTouchDevice();
+    console.log(canHover);
+    console.log($(document).width());
     window.onscroll = function() {
-        if (canHover) {
+        if (canHover || $(document).width() > 480) {
             var currentScrollPos = window.pageYOffset;
             if (mainMenuHeight < $(window).outerHeight()) {
                 if (prevScrollpos > currentScrollPos) {
@@ -81,11 +83,8 @@ jQuery(document).ready(function($) {
     }
 
     function isTouchDevice() {
-        try {
-            document.createEvent('TouchEvent');
-            return true;
-        } catch (e) {
-            return false;
-        }
+        return 'ontouchstart' in window // works on most browsers 
+            ||
+            navigator.maxTouchPoints; // works on IE10/11 and Surface
     }
 });
