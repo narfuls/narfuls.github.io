@@ -159,7 +159,7 @@ html {
     padding-left: 0;
 }
 
-.main-navigation ul ul {
+.main-navigation>div>ul>li.menu-item-has-children>ul {
     float: left;
     position: absolute;
     top: 100%;
@@ -184,14 +184,9 @@ html {
     width: 200px;
 }
 
-.main-navigation ul li:hover>ul,
-.main-navigation ul li.focus>ul {
+.main-navigation ul li.menu-item-has-children:hover>ul,
+.main-navigation ul li.menu-item-has-children.focus>ul {
     left: auto;
-}
-
-.hideshow:hover>ul,
-.hideshow.focus>ul {
-    right: 0px;
 }
 
 .hideshow {
@@ -228,6 +223,15 @@ html {
     display: block;
 }
 
+.hideshow>ul {
+    left: auto;
+    display: none;
+    float: left;
+    position: absolute;
+    top: 100%;
+    z-index: 99999;
+}
+
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -255,9 +259,16 @@ html {
     .hideshow>ul {
         width: 100vw;
         right: 0px;
+        height: 80vh;
+        overflow-y: scroll;
     }
     .hideshow>ul>li>ul {
         position: unset;
+    }
+    .hideshow {
+        position: fixed;
+        right: 0px;
+        top: 0px;
     }
     .hideshow ul {
         padding-left: 1em;
